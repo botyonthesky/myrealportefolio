@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Indie+Flower&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <nav class="navbar">
+            <a id="me">Thibaud Maillard</a>
+            <a href="#projets">Projects</a>
+            <a href="#competences">Compétences</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <h2 id="portfolio-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <div class="image-container">
+                    <img src="runaway.webp" alt="Run Away" class="project-image">
+                    <div class="banner">
+                        Run Away
+                        <a href="#" class="open-modal">En savoir plus</a>
+                    </div>
+                </div>
+                <h3 class="project-title">Run Away</h3>
+                <a href="lien-projet1.html" class="project-link">lien itch.io</a>
+            </div>
+
+            <div class="project-item">
+                <div class="image-container">
+                    <img src="runaway.webp" alt="Cub 3D" class="project-image">
+                    <div class="banner">
+                        Informations sur Cub 3D
+                        <a href="#" class="open-modal">En savoir plus</a>
+                    </div>
+                </div>
+                <h3 class="project-title">Cub 3D</h3>
+                <a href="lien-projet1.html" class="project-link">lien itch.io</a>
+            </div>
+            
+            <div class="project-item">
+                <div class="image-container">
+                    <img src="runaway.webp" alt="So long" class="project-image">
+                    <div class="banner">
+                        Informations sur So long
+                        <a href="#" class="open-modal">En savoir plus</a>
+                    </div>
+                </div>
+                <h3 class="project-title">So long</h3>
+                <a href="lien-projet1.html" class="project-link">lien itch.io</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Détails supplémentaires</h2>
+            <p id="modal-text">Ceci est un texte descriptif sur le projet.</p>
+            <a href="https://example.com" target="_blank">Visiter la page</a>
+        </div>
+    </div>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section">
+        <br><br>
+        <!-- Game Design -->
+        <div class="skill-category">
+            <h3><strong class="highlight2">Game Design</strong></h3>
+            <img src="icons8-game-design-66.png" alt="Game Design Image" class="competence-image">
+            <ul>
+                <li>Level Design : Création des environnements et des défis spécifiques.</li>
+                <li>Mécaniques de jeu : Définition des règles et des systèmes de gameplay.</li>
+                <li>Narration interactive : Intégration de l'histoire et des éléments narratifs dans le gameplay.</li>
+                <li>Équilibrage du jeu : Ajustements des défis et des récompenses pour une expérience de jeu optimale.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Développement -->
+        <div class="skill-category">
+            <h3><strong class="highlight2">Développement</strong></h3>
+            <img src="icons8-développeur-66.png" alt="Game Design Image" class="competence-image">
+            <br>
+            <ul>
+                <li>
+                    <strong class="highlight">Unix : Expertise intermédiaire</strong> <br>
+                    <em>Développement d'un Bash POSIX, gestion des processus, des commandes et des signaux.</em>
+                    <br>
+                    <br>
+                </li>
+                <li>
+                    <strong class="highlight">C : Connaissance opérationnelle</strong> <br>
+                    <ul>
+                        <li><em>1/ Développement complet d'un petit jeu 2D avec Minilibx, gestion des textures, et des animations.</em></li>
+                        <li><em>2/ Réalisation graphique d'un équivalent à Wolfenstein 3D, gestion de l'UI, des animations et du menu.</em></li>
+                        <br>
+                        <br>
+                    </ul>
+                </li>
+                <li>
+                    <strong class="highlight">Unreal Engine, Blueprint et C++ : Maitrise fonctionnelle</strong> <br>
+                    <ul>
+                        <li><em>1/ Codage des mécanismes et des interactions du jeu.</em></li>
+                        <li><em>2/ Gestion des interfaces pour la communication entre Blueprints.</em></li>
+                        <li><em>3/ Création et gestion des UI pour l'affichage des interactions, des scores et des menus.</em></li>
+                        <li><em>4/ Manipulation des objets et composants : meshes, colliders, et lights afin de définir au mieux les propriétés des objets.</em></li>
+                        <br>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Infographie -->
+        <div class="skill-category">
+            <h3><strong class="highlight2">Infographie</strong></h3>
+            <img src="icons8-balance-3d-66.png" alt="Game Design Image" class="competence-image">
+            <br>
+            <ul>
+                <li>
+                    <strong class="highlight">Blender : Competences intermediaires</strong> <br>
+                </li>
+                <ul>
+                    <li><em>1/ Creation d'objets basiques.</em></li>
+                    <li><em>2/ Modelisation a partir de formes definies.</em></li>
+                    <li><em>3/ Application des materiaux, UV mapping simple.</em></li>
+                    <br>
+                    <br>
+                </ul>
+                <li>
+                    <strong class="highlight">Photoshop: Competences de base</strong> <br>
+                </li>
+                <ul>
+                    <li><em>1/ Application de layers.</em></li>
+                    <li><em>2/ Recadrage et redimensionnement.</em></li>
+                    <li><em>3/ Application et modification de texte.</em></li>
+                    <br>
+                </ul>
+            </ul>
+        </div>
+
+        <!-- Gestion -->
+        <div class="skill-category">
+            <h3><strong class="highlight2">Gestion</strong></h3>
+            <img src="icons8-la-gestion-66.png" alt="Game Design Image" class="competence-image">
+            <br>
+            <ul>
+                <li>
+                    <strong class="highlight">Miro : Competences intermediaires</strong> <br>
+                </li>
+                <ul>
+                    <li><em>1/ Mise en place d'un planning de travail.</em></li>
+                    <li><em>2/ Organisation de phase de reflexion, brainstrorming.</em></li>
+                    <br>
+                    <br>
+                </ul>
+                <li>
+                    <strong class="highlight">Unreal Engine Analytics / Steam Playtest : Competences intermediaires</strong> <br>
+                </li>
+                <ul>
+                    <li><em>Mise en place de playtest.</em></li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="image-row">
+            <a href="https://code.visualstudio.com/" target="_blank">
+                <img src="icons8-visual-studio-50.png" alt="Image 1">
+            </a>
+            <a href="https://www.unrealengine.com/fr" target="_blank">
+                <img src="icons8-unreal-engine-50.png" alt="Image 2">
+            </a>
+            <a href="https://www.blender.org/" target="_blank">
+                <img src="icons8-blender-3d-50.png" alt="Image 3">
+            </a>
+            <a href="https://miro.com/fr/" target="_blank">
+                <img src="icons8-fruit-50.png" alt="Image 4">
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Parcours -->
+    <section id="parcours" class="section">
+        <h2>Parcours</h2>
+        <p>Insérez ici votre parcours professionnel et académique.</p>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Insérez ici vos informations de contact.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Thibaud Maillard. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
