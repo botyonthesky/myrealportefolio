@@ -13,10 +13,11 @@
     <header>
         <nav class="navbar">
             <a id="me">Thibaud Maillard</a>
-            <a href="#projets">Projects</a>
-            <a href="#competences">Skill</a>
-            <!-- <a href="#parcours">Parcours</a> -->
-            <a href="#contact">Contact</a>
+			<div class="nav-links">
+				<a href="#projets">Projects</a>
+				<a href="#competences">Skill</a>
+				<a href="#contact">Contact</a>
+			</div>
         </nav>
     </header>
 
@@ -55,7 +56,7 @@
         <div class="project-item">
             <div class="image-container">
 				<a href="#" class="open-modal" data-modal="modal-ra">
-                	<img src="runawaytitle.webp" alt="Run Away" class="project-image">
+                	<img src="runaway_title.png" alt="Run Away" class="project-image" style="width: 800px; height: auto;">
                 	<div class="banner">Run Away</div>
 				</a>
             </div>
@@ -65,7 +66,7 @@
         <div class="project-item">
 			<div class="image-container">
 				<a href="#" class="open-modal" data-modal="modal-cub">
-                <img src="cub_title.png" alt="Cub 3D" class="project-image">
+                <img src="cub_title.png" alt="Cub 3D" class="project-image" style="width: 800px; height: auto;">
                 <div class="banner">Cub 3D</div>
 				</a>
             </div>
@@ -78,7 +79,7 @@
         <div class="project-item">
             <div class="image-container">
 				<a href="#" class="open-modal" data-modal="modal-sol">
-                <img src="solong.png" alt="So long" class="project-image">
+                <img src="solong.png" alt="So long" class="project-image" style="width: 800px; height: auto;">
                 <div class="banner">So long</div>
 				</a>
             </div>
@@ -98,10 +99,19 @@
 		<br>
 		<p>It's a simple game, in which you find yourself in an abandoned village (or almost) and you have to collect souls in order to escape.</p>
 		<div class="image-gallery">
-			<img src="ra_gameplay.webp" alt="ra_gameplay" class="image-modal">
-			<img src="ra2.webp" alt="ra1" class="image-modal">
-			<img src="ra3.webp" alt="ra2" class="image-modal">
-			<img src="ra1.webp" alt="ra3" class="image-modal">
+			<a href="ra_gameplay.webp" target="_blank">
+				<img src="ra_gameplay.webp" alt="ra_gameplay" class="image-modal">
+			</a>
+			<a href="ra1.webp" target="_blank">
+				<img src="ra1.webp" alt="ra_gameplay" class="image-modal">
+			</a>
+			<a href="ra2.webp" target="_blank">
+				<img src="ra2.webp" alt="ra_gameplay" class="image-modal">
+			</a>
+			<a href="ra3.webp" target="_blank">
+				<img src="ra3.webp" alt="ra_gameplay" class="image-modal">
+			</a>
+			<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! large image to push !!!!!!!!!!!!!!! -->
 		</div>
         <p id="modal-text"></p>
         <a href="https://gamejolt.com/games/runawaybyboty/760436" target="_blank">Lien Gamejolt</a>
@@ -118,12 +128,21 @@
 		<p>This game is an adaptation of the famous Wolfeinstein 3d game, in which we were able to develop our creativity and rigor in the realization of a project.</p>
 		<p>The game is written entirely in C language.</p>
 		<div class="image-gallery">
-			<img src="cub1.png" alt="cub1" class="image-modal">
-			<img src="cub2.png" alt="cub2" class="image-modal">
-			<img src="cub3.png" alt="cub3" class="image-modal">
+			<a href="cub1.png" target="_blank">
+				<img src="cub1.png" alt="cub1" class="image-modal">
+			</a>
+			<a href="cub2.png" target="_blank">
+				<img src="cub2.png" alt="cub1" class="image-modal">
+			</a>
+			<a href="cub4.png" target="_blank">
+				<img src="cub4.png" alt="cub1" class="image-modal">
+			</a>
+			<a href="cub3.png" target="_blank">
+				<img src="cub3.png" alt="cub1" class="image-modal">
+			</a>
 		</div>
         <p id="modal-text"></p>
-        <a href="https://github.com/ScrapingRat/cub3D" target="_blank">Lien GitHub</a>
+        <a href="https://github.com/botyonthesky/Cub3D" target="_blank">Lien GitHub</a>
     </div>
 </div>
 
@@ -131,58 +150,76 @@
 <div class="modal" id="modal-sol">
     <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Détails supplémentaires sol</h2>
-        <p id="modal-text">Ceci est un texte descriptif sur le projet.</p>
-        <a href="https://example.com" target="_blank">Visiter la page</a>
+        <h2>SO LONG<br></h2>
+		<p>This is my Solong game, created as a student project.</p>
+		<p>This game is made in C language with MiniLibX.</p>
+		<p>So long has enabled me to develop skills such as window management, event management, texture integration and the creation of small 2D animations.</p>
+		<p>This project forced me to be rigorous, to improve my C programming skills, and to use basic algorithms.</p>
+		<div class="image-gallery">
+			<a href="solong1.png" target="_blank">
+				<img src="solong1.png" alt="solong1" class="image-modal">
+			</a>
+			<a href="solong2.png" target="_blank">
+				<img src="solong2.png" alt="solong1" class="image-modal">
+			</a>
+			<a href="solong3.png" target="_blank">
+				<img src="solong3.png" alt="solong1" class="image-modal">
+			</a>
+		</div>
+        <p id="modal-text"></p>
+        <a href="https://github.com/botyonthesky/SoLong" target="_blank">Lien GitHub</a>
     </div>
 </div>
 
-
+<br><br>
 <script src="script.js"></script>
+
+
     <!-- Section Compétences -->
     <section id="competences" class="section">
-       <br><br> 
+		<h2 id="portfolio-title">Skill</h2>
         <!-- Game Design -->
         <div class="skill-category">
             <h3><strong class="highlight2">Game Design</strong></h3>
-            <img src="icons8-game-design-66.png" alt="Game Design Image" class="competence-image">
+            <img src="icons8-game-design-66.png" alt="Game Design Image" class="competence-image game-design-image">
             <ul>
-                <li>Level Design : Création des environnements et des défis spécifiques.</li>
-                <li>Mécaniques de jeu : Définition des règles et des systèmes de gameplay.</li>
-                <li>Narration interactive : Intégration de l'histoire et des éléments narratifs dans le gameplay.</li>
-                <li>Équilibrage du jeu : Ajustements des défis et des récompenses pour une expérience de jeu optimale.</li>
+                <li><em>• Level Design: Creating environments and specific challenges.</em></li>
+                <li><em>• Game mechanics: Definition of rules and gameplay systems.</em></li>
+                <li><em>• Interactive narrative: Integration of story and narrative elements into the gameplay.</em></li>
+                <li><em>• Game balancing: Adjustments to challenges and rewards for an optimal gaming experience.</em></li>
             </ul>
         </div>
         <br>
         <!-- Développement -->
         <div class="skill-category">
-            <h3><strong class="highlight2">Développement</strong></h3>
-            <img src="icons8-développeur-66.png" alt="Game Design Image" class="competence-image">
+            <h3><strong class="highlight2">Development</strong></h3>
+            <img src="icons8-développeur-66.png" alt="Game Design Image" class="competence-image development-image">
             <br>
-            <ul>
+            <!-- <ul class="detailed-list"> -->
                 <li>
-                    <strong class="highlight">Unix : Expertise intermédiaire</strong> <br>
-                    <em>Développement d'un Bash POSIX, gestion des processus, des commandes et des signaux.</em>
-                    <br>
+                    <strong class="highlight">Unix: Intermediate knowledge</strong> <br>
                     <br>
                 </li>
                 <li>
-                    <strong class="highlight">C : Connaissance opérationnelle</strong> <br>
+                    <strong class="highlight">C langage: Operational knowledge</strong> <br>
+					<br>
                 </li>
+				<li>
+                    <strong class="highlight">C++ langage: Intermediate knowledge</strong> <br>
+					<br>
+                </li>
+				<li>
+                    <strong class="highlight">HTML / CSS: Intermediate knowledge</strong> <br>
+					<br>
+                </li>
+				______________________
+					<br><br><br>
+                    <strong class="highlight">Unreal Engine & Blueprint: Functional mastery</strong> <br><br>
                     <ul>
-                        <li><em>1/ Développement complet d'un petit jeu 2D avec Minilibx, gestion des textures, et des animations.</em></li>
-                        <li><em>2/ Réalisation graphique d'un équivalent à Wolfenstein 3D, gestion de l'UI, des animations et du menu.</em></li>
-                        <br>
-                        <br>
-                    </ul>
-                        </li>
-                        <li>
-                    <strong class="highlight">Unreal Engine, Blueprint et C++ : Maitrise fonctionnelle</strong> <br>
-                    <ul>
-                        <li><em>1/ Codage des mécanismes et des interactions du jeu.</em></li>
-                        <li><em>2/ Gestion des interfaces pour la communication entre Blueprints.</em></li>
-                        <li><em>3/ Création et gestion des UI pour l'affichage des interactions, des scores et des menus.</em></li>
-                        <li><em>4/ Manipulation des objets et composants : meshes, colliders, et lights afin de définir au mieux les propriétés des objets.</em></li>
+                        <li><em>• Coding of game mechanisms and interactions.</em></li>
+                        <li><em>• Interface management for communication between Blueprints.</em></li>
+                        <li><em>• Creation and management of UI's for displaying interactions, scores and menus.</em></li>
+                        <li><em>• Manipulating objects and components: meshes, colliders and lights to define object properties as effectively as possible.</em></li>
                         <br>
                     </ul>
                 </li>
@@ -191,26 +228,25 @@
 
         <!-- Infographie -->
         <div class="skill-category">
-            <h3><strong class="highlight2">Infographie</strong></h3>
+            <h3><strong class="highlight2">Infography</strong></h3>
              <img src="icons8-balance-3d-66.png" alt="Game Design Image" class="competence-image">
              <br>
             <li>
-                <strong class="highlight">Blender : Competences intermediaires</strong> <br>
+                <strong class="highlight">Blender : Intermediate knowledge</strong> <br>
             </li>
                 <ul>
-                    <li><em>1/ Creation d'objets basiques.</em></li>
-                    <li><em>2/ Modelisation a partir de formes definies.</em></li>
-                    <li><em>3/ Application des materiaux, UV mapping simple.</em></li>
+                    <li><em>• Creating basic objects.</em></li>
+                    <li><em>• Modelling using defined shapes.</em></li>
+                    <li><em>• Application of materials, simple UV mapping.</em></li>
                     <br>
                     <br>
                 </ul>
                     <li>
-                <strong class="highlight">Photoshop: Competences de base</strong> <br>
+                <strong class="highlight">Photoshop: Basic knowledge</strong> <br>
                </li>
                     <ul>
-                        <li><em>1/ Application de layers.</em></li>
-                        <li><em>2/ Recadrage et redimensionnement.</em></li>
-                        <li><em>3/ Application et modification de texte.</em></li>
+                        <li><em>• Application of layers.</em></li>
+                        <li><em>• Crop and resize.</em></li>
                     <br>
                 </ul>
 
@@ -218,23 +254,23 @@
 
         <!-- Gestion -->
         <div class="skill-category">
-            <h3><strong class="highlight2">Gestion</strong></h3>
+            <h3><strong class="highlight2">Management</strong></h3>
              <img src="icons8-la-gestion-66.png" alt="Game Design Image" class="competence-image">
              <br>
             <li>
-                <strong class="highlight">Miro : Competences intermediaires</strong> <br>
+                <strong class="highlight">Miro : intermediate knowledge</strong> <br>
             </li>
                 <ul>
-                    <li><em>1/ Mise en place d'un planning de travail.</em></li>
-                    <li><em>2/ Organisation de phase de reflexion, brainstrorming.</em></li>
+                    <li><em>• Setting up a work schedule.</em></li>
+                    <li><em>• Organisation of brainstorming sessions.</em></li>
                     <br>
                     <br>
                 </ul>
                     <li>
-                <strong class="highlight">Unreal Engine Analytics / Steam Playtest : Competences intermediaires</strong> <br>
+                <strong class="highlight">Unreal Engine Analytics / Steam Playtest : Basic knowledge</strong> <br>
                 </li>
                     <ul>
-                        <li><em>Mise en place de playtest.</em></li>
+                        <li><em>• Setting up playtests.</em></li>
                     </ul>
             </li>
                 
@@ -252,22 +288,30 @@
             <a href="https://miro.com/fr/" target="_blank">
                 <img src="icons8-fruit-64.png" alt="Image 4">
             </a>
+            <a href="https://www.adobe.com/fr/products/photoshop.html" target="_blank">
+                <img src="ps1.png" alt="Image 4">
+			</a>
         </div>
     </section>
 
     <!-- Section Contact -->
     <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Vous pouvez me contacter via :</p>
+        <h2 id="portfolio-title">Contact</h2>
+        <p>Please send me a message if you have any questions, I'd love to hear from you.</p>
         <ul>
-            <li>Email : <a href="mailto:ton.email@example.com">ton.email@example.com</a></li>
-            <li>LinkedIn : <a href="https://linkedin.com/in/tonprofil">linkedin.com/in/tonprofil</a></li>
+			<li>
+				Resume: <a href="CV.pdf" download="myResume">Download PDF</a>
+			</li>
+            <li>Email: <a href="mailto:maillard.thibaud@gmail.com">maillard.thibaud@gmail.com</a></li>
+			<a href="linkedinlink" target="_blank">
+				<img src="linkedin.png" alt="linkedin" class="linkedin-image">
+			</a>
         </ul>
     </section>
 
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 Ton Nom. Tous droits réservés.</p>
+        <p>Copyright &copy; 2024 by Thibaud Maillard.</p>
     </footer>
 </body>
 </html>

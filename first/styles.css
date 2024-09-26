@@ -28,6 +28,7 @@ body {
     font-size: 30px; /* Taille de la police, modifie selon tes besoins */
     font-weight: bold; /* Gras, si nécessaire */
     color: #630000; /* Couleur de texte, modifie selon tes besoins */
+	margin-right: auto;
 }
 
 #aboutme {
@@ -149,13 +150,6 @@ img {
     /* align-items: center;  */
 }
 
-/* .modal-content p, .modal-content h2{ */
-	/* font-family: 'VCR OSD Mono', 'Pixelated', 'Courier New', sans-serif; */
-    /* font-size: 24px; Taille de la police des paragraphes */
-    /* color: #000000; Couleur des paragraphes */
-    /* line-height: 1.5; Hauteur de ligne pour l'espacement */
-    /* text-align: justify; Justifie le texte */
-/* } */
 
 .modal-content h2 {
 
@@ -266,33 +260,92 @@ img {
 /* Centrage du texte */
 .skill-category {
     /* font-size: 2.0em; */
+
+	font-family: 'VCR OSD Mono', 'Pixelated', 'Courier New', sans-serif;
     text-align: center;  /* Centre les compétences */
     margin-bottom: 50px; /* Espace entre chaque catégorie */
 }
 
 /* Mettre en gras et plus gros */
 .highlight {
+
+	font-family: 'VCR OSD Mono', 'Pixelated', 'Courier New', sans-serif;
     font-weight: bold;
     font-size: 1.2em;  /* Ajuste la taille (1.2em signifie 120% de la taille de base) */
 }
 .highlight2 {
+
+	font-family: 'VCR OSD Mono', 'Pixelated', 'Courier New', sans-serif;
     font-weight: bold;
     font-size: 1.5em;  /* Ajuste la taille (1.2em signifie 120% de la taille de base) */
 }
+
+
 /* Mettre en italique et espacer */
 .skill-category li em {
+
+	font-family: 'VCR OSD Mono', 'Pixelated', 'Courier New', sans-serif;
     display: block;
     margin-top: 5px;   /* Espacement entre le titre et la description */
     font-style: italic;
 }
+.skill-category h3 {
+
+	font-family: 'VCR OSD Mono', 'Pixelated', 'Courier New', sans-serif;
+    /* display: block; */
+    /* margin-top: 5px;   Espacement entre le titre et la description */
+    font-style: italic;
+}
+
+.detailed-list {
+    list-style-type: disc; /* Type de puce par défaut (disc = rond) */
+	list-style-position: inside;
+    padding-left: 0; /* Espacement à gauche pour indenter les puces */
+	margin: 0;
+}
 
 
-/* Centrer les images */
 .competence-image {
     display: block;
     margin: 20px auto;   /* Centre l'image horizontalement */
-    width: 70px;        /* Taille de l'image (à ajuster selon les besoins) */
+    width: 100px;        /* Taille de l'image (à ajuster selon les besoins) */
     height: auto;
+}
+
+.game-design-image {
+    width: 120px; /* Taille spécifique pour l'image Game Design */
+    height: auto; /* Conserve le ratio d'aspect */
+}
+
+.development-image {
+    width: 80px; /* Taille spécifique pour l'image Development */
+    height: auto; /* Conserve le ratio d'aspect */
+}
+
+.linkedin-image {
+    width: 40px; /* Ajustez cette valeur pour changer la largeur */
+    height: auto; /* Maintient les proportions de l'image */
+    transition: transform 0.3s; /* Ajoute une transition pour le hover */
+}
+
+.linkedin-image:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+}
+
+#contact {
+    text-align: center; /* Centre tout le contenu de la section */
+    margin: 0 auto;     /* Centre la section par rapport à la page */
+    padding: 20px;      /* Espacement interne autour de la section */
+}
+
+/* Centrage de la liste */
+#contact ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0;            /* Supprime le padding */
+}
+
+#contact li {
+    margin: 10px 0; /* Espacement vertical entre les éléments de la liste */
 }
 
 /* Classe pour centrer les images */
@@ -329,13 +382,21 @@ img {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 30px;
     background-color: #776868;
+	align-items: center;
+}
+
+.navbar .nav-links {
+    display: flex;                       /* Utilise flexbox pour les liens restants */
+    justify-content: center;          /* Centre les autres liens */
+    flex: 1;                             /* Permet au conteneur de prendre l'espace restant */
+	margin-right: 100px;
 }
 
 .navbar a {
-    margin: 0 30px; /* Espace horizontal entre les liens (ajuste la valeur) */
+    margin: 0 60px; /* Espace horizontal entre les liens (ajuste la valeur) */
     text-decoration: none; /* Supprime le soulignement des liens */
     color: #333; /* Couleur du texte des liens (ajuste si besoin) */
 	font-size: 30px;
@@ -343,67 +404,5 @@ img {
 }
 
 .navbar a:hover {
-    color: #007BFF; /* Change la couleur au survol (ajuste si besoin) */
-}
-/* Style général pour la timeline */
-.timeline {
-    position: relative;
-    padding: 20px 0;
-    margin: 0 auto;
-    max-width: 800px; /* Ajuste la largeur max si nécessaire */
-}
-
-.timeline-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px; /* Espacement entre les éléments */
-    position: relative;
-}
-
-.timeline-date {
-    width: 100px; /* Largeur pour l'espace de la date */
-    font-weight: bold;
-    text-align: right;
-    padding-right: 20px; /* Espacement à droite */
-}
-
-.timeline-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.timeline-image {
-    width: 50px; /* Taille du rond */
-    height: 50px;
-    border-radius: 50%; /* Forme ronde */
-    overflow: hidden;
-    margin-right: 20px; /* Espacement entre l'image et la description */
-    position: relative;
-}
-
-.timeline-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.timeline-description {
-    flex: 1;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(50% - 1px); /* Ajuste la ligne pour qu'elle soit centrée */
-    width: 2px;
-    height: 100%;
-    background: #000; /* Couleur de la ligne */
-    z-index: -1;
-}
-
-/* Style pour les ronds sur la timeline */
-.timeline-item:first-child::before {
-    display: none; /* Cache la ligne pour le premier élément */
+    color: #830a0a; /* Change la couleur au survol (ajuste si besoin) */
 }
